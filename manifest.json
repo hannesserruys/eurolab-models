@@ -4,7 +4,7 @@
     "EE_2024_f1_2015_03_e2__cp312__win_amd64": {
       "country": "EE",
       "dataset": "EE_2024_f1_2015_03_e2",
-      "filename": "EE_2024_f1_2015_03_e2.zip",
+      "filename": "cp312/win_amd64/EE_2024_f1_2015_03_e2.zip",
       "version_tag": "20260218T145400Z",
       "python_tag": "cp312",
       "platform_tag": "win_amd64",
@@ -35,6 +35,44 @@
             "choice_probs": "3fa506e4ad10314755113bfc89faffebb9e04a083e78f13a02fe89171ca834b1",
             "likelihood": "9657618d0e7d471520eef9085d696cb1aa2937c84c7de4e92413d4fb1091f42e",
             "labour_supply": "03dcc9e90ab1d3d2077e2f7c82ff16ac2cdf1bf75e04a9a6f70d9458e5c58bc8"
+          }
+        }
+      }
+    },
+    "EE_2024_f1_2015_03_e2__cp313__win_amd64": {
+      "country": "EE",
+      "dataset": "EE_2024_f1_2015_03_e2",
+      "filename": "cp313/win_amd64/EE_2024_f1_2015_03_e2.zip",
+      "version_tag": "20260514T152514Z",
+      "python_tag": "cp313",
+      "platform_tag": "win_amd64",
+      "sha256": "57f97f0d9ecdf92dfe5bc86b18a32ea1aae46f4f685934100fa10f0212ad5308",
+      "exported_at": "2026-05-14T15:25:16.122291+00:00",
+      "type_models": [
+        "male",
+        "female",
+        "couple"
+      ],
+      "artifacts": {
+        "male": {
+          "pyd_hashes": {
+            "choice_probs": "74b0f8a3f6d3cd6032fc328a0520e6c5ac89eafe638e22d5be7cc0a4fb7664f6",
+            "likelihood": "681d4ede850fa54da4b171e3938da4f854fc0de0d7dca00cbab1a3a5d8d58de1",
+            "labour_supply": "6965425ec26017bcb26edcc9c2d1fa521b88935f153fc01cd7f730f42522af49"
+          }
+        },
+        "female": {
+          "pyd_hashes": {
+            "choice_probs": "33a62cbe239961c2bb1f7095f1adb966e64be1f724a73cb17911f0fcfcd01098",
+            "likelihood": "ed60416a0929a437ba11ee70adb9fa8b916ba14c28d2dbf61a78f2801e6cbefe",
+            "labour_supply": "210518761fcd5282ecf7aed377bfd8d8249de17c6041b29b97924ee1e819d2fd"
+          }
+        },
+        "couple": {
+          "pyd_hashes": {
+            "choice_probs": "2023f02371b71d21b9656c9a40a5afa8aaadbf524b30992d073a44b877ac5db9",
+            "likelihood": "84b8db0656333446e60105664dd51f162e8d3f7f1f62ec3a4f900d621873b5f8",
+            "labour_supply": "d86ad64cba585bcd2e866fa2011aa16310d61171013dc9d228a8cf421395c578"
           }
         }
       }
