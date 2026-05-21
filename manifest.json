@@ -1,53 +1,30 @@
 {
   "schema_version": 1,
   "models": {
-    "EE_2024_f1_2015_03_e2__cp312__win_amd64": {
-      "country": "EE",
-      "dataset": "EE_2024_f1_2015_03_e2",
-      "filename": "cp312/win_amd64/EE_2024_f1_2015_03_e2.zip",
-      "version_tag": "20260218T145400Z",
-      "python_tag": "cp312",
-      "platform_tag": "win_amd64",
-      "sha256": "fbe029a09a93da5d113704d567c3ed5bc123a600879803ef1f758090b0a31408",
-      "exported_at": "2026-02-18T14:54:32.990248+00:00",
-      "type_models": [
-        "male",
-        "female",
-        "couple"
-      ],
-      "artifacts": {
-        "male": {
-          "pyd_hashes": {
-            "choice_probs": "bb8db75586f2fd0264f81d2c2117333b1fe5b1d521c1fbbeef32d1c8c8d193b8",
-            "likelihood": "ea93f3bfb92a2d99bcaac4b884fc63910c4a0de373f28c8dbde870f028825bc7",
-            "labour_supply": "2590680717e84c5f8b5638443058b29ded53c4764a4f26787fade40f537d71f5"
-          }
-        },
-        "female": {
-          "pyd_hashes": {
-            "choice_probs": "04bcbf5066a6e8cfb26051c6dfbe86df69eb7b494cf3aa1c27ae972972a89e54",
-            "likelihood": "cb3b3df41a7edff725ec44c1082f53455cdd8ca850615abb30e7cc4ed9277fbc",
-            "labour_supply": "9e1e0708ea5c120f360dbd23a908de9a03114ed8205a451c8b380496c874ba5b"
-          }
-        },
-        "couple": {
-          "pyd_hashes": {
-            "choice_probs": "3fa506e4ad10314755113bfc89faffebb9e04a083e78f13a02fe89171ca834b1",
-            "likelihood": "9657618d0e7d471520eef9085d696cb1aa2937c84c7de4e92413d4fb1091f42e",
-            "labour_supply": "03dcc9e90ab1d3d2077e2f7c82ff16ac2cdf1bf75e04a9a6f70d9458e5c58bc8"
-          }
-        }
-      }
-    },
     "EE_2024_f1_2015_03_e2__cp313__win_amd64": {
       "country": "EE",
       "dataset": "EE_2024_f1_2015_03_e2",
       "filename": "cp313/win_amd64/EE_2024_f1_2015_03_e2.zip",
-      "version_tag": "20260514T152514Z",
+      "version_tag": "20260521T213136Z",
       "python_tag": "cp313",
       "platform_tag": "win_amd64",
-      "sha256": "57f97f0d9ecdf92dfe5bc86b18a32ea1aae46f4f685934100fa10f0212ad5308",
-      "exported_at": "2026-05-14T15:25:16.122291+00:00",
+      "sha256": "ba0617ff2f9a2cda6761aac095612541cacee6552b58b062e40684ba459b306d",
+      "prep_hash": "754319911dfc3bcefd71bf5476f8b038",
+      "prepdata_hash": "2fdcf3220b3041a881819ae26a585415",
+      "prep_signature": {
+        "country": "EE",
+        "dataset": "EE_2024_f1_2015_03_e2",
+        "age_min": 20,
+        "age_max": 64,
+        "min_hour": 5,
+        "n_hours": 3,
+        "hours_distribution": 2,
+        "EmplStatus": 1,
+        "NumberOfSectors": 1,
+        "country_model_hash": "b265e6c40e2a05fe5d8740ec8ed29208"
+      },
+      "prep_signature_hash": "b617d43563f58424ec6fec595104c24b05492a72422e0307483f570ba2e15424",
+      "exported_at": "2026-05-21T21:31:38.570507+00:00",
       "type_models": [
         "male",
         "female",
@@ -76,6 +53,75 @@
           }
         }
       }
+    },
+    "ES_2024_b1_2015_03_e2__cp313__win_amd64": {
+      "country": "ES",
+      "dataset": "ES_2024_b1_2015_03_e2",
+      "filename": "cp313/win_amd64/ES_2024_b1_2015_03_e2.zip",
+      "version_tag": "20260521T213146Z",
+      "python_tag": "cp313",
+      "platform_tag": "win_amd64",
+      "sha256": "054eab29c7ce568492cb07a223d90bb1649049b6d4ed6da37d2e7bf6a3864fcb",
+      "prep_hash": null,
+      "prepdata_hash": null,
+      "prep_signature": {
+        "country": "ES",
+        "dataset": "ES_2024_b1_2015_03_e2"
+      },
+      "prep_signature_hash": "7060db8e496f9c275079dc45c2f2d334576dc7f16006f1fd083aaada92f4d3d0",
+      "exported_at": "2026-05-21T21:31:49.848169+00:00",
+      "type_models": [
+        "male",
+        "female",
+        "couple"
+      ],
+      "artifacts": {}
+    },
+    "MT_2024_b1_2015_03_e2__cp313__win_amd64": {
+      "country": "MT",
+      "dataset": "MT_2024_b1_2015_03_e2",
+      "filename": "cp313/win_amd64/MT_2024_b1_2015_03_e2.zip",
+      "version_tag": "20260521T213154Z",
+      "python_tag": "cp313",
+      "platform_tag": "win_amd64",
+      "sha256": "c70d02b51ec3f4a9d4e8ad05982cb617ea83e58cc01ceae7e5a7b4393883a305",
+      "prep_hash": null,
+      "prepdata_hash": null,
+      "prep_signature": {
+        "country": "MT",
+        "dataset": "MT_2024_b1_2015_03_e2"
+      },
+      "prep_signature_hash": "9a8a93eefeb2d45383d67800e26796e466ca012bfb9e8533f5c5ca05781e6eca",
+      "exported_at": "2026-05-21T21:31:57.518146+00:00",
+      "type_models": [
+        "male",
+        "female",
+        "couple"
+      ],
+      "artifacts": {}
+    },
+    "SE_2024_b1_2015_03_e2__cp313__win_amd64": {
+      "country": "SE",
+      "dataset": "SE_2024_b1_2015_03_e2",
+      "filename": "cp313/win_amd64/SE_2024_b1_2015_03_e2.zip",
+      "version_tag": "20260521T213202Z",
+      "python_tag": "cp313",
+      "platform_tag": "win_amd64",
+      "sha256": "9fad51681f24be1b40e0b6187b12dcc3539ab54a15ec136e1cd5fc3dde388bdb",
+      "prep_hash": null,
+      "prepdata_hash": null,
+      "prep_signature": {
+        "country": "SE",
+        "dataset": "SE_2024_b1_2015_03_e2"
+      },
+      "prep_signature_hash": "a90381f322727844af474365dd2aaa128b8c5792b2352d68061b90c3ab79dbc2",
+      "exported_at": "2026-05-21T21:32:07.178950+00:00",
+      "type_models": [
+        "male",
+        "female",
+        "couple"
+      ],
+      "artifacts": {}
     }
   }
 }
