@@ -1,0 +1,32 @@
+{
+  "format_version": 1,
+  "generated_at": "20260602T153300Z",
+  "bundles": [
+    {
+      "kind": "model",
+      "country": "EE",
+      "dataset": "EE_2024_f1_2015_03_e2",
+      "prep_hash": "7fcff2435b1c0b5479c6596099dc7a50",
+      "prep_signature_hash": "6821b10b00458afcba20891e11632b0787fb0d4946e46c5cdcd81c1d3eb88d57",
+      "python_tag": "cp313",
+      "platform_tag": "win_amd64",
+      "path": "models/cp313/win_amd64/EE/EE_2024_f1_2015_03_e2__7fcff2435b1c0b5479c6596099dc7a50.zip",
+      "size": 9427151,
+      "sha256": "8b8e59670a94174053185b4e66012811f5b0077afa4fafd0684da681a9f7ce42",
+      "version_tag": "20260602T153255Z"
+    },
+    {
+      "kind": "model",
+      "country": "MT",
+      "dataset": "MT_2024_b1_2015_03_e2",
+      "prep_hash": "2a0e8bbfe20f09627b9a36bac9af63ec",
+      "prep_signature_hash": "5315437deb47948c8a5d4e7782b15937d03cd7276e1935ac300c62d7789283c5",
+      "python_tag": "cp313",
+      "platform_tag": "win_amd64",
+      "path": "models/cp313/win_amd64/MT/MT_2024_b1_2015_03_e2__2a0e8bbfe20f09627b9a36bac9af63ec.zip",
+      "size": 9427121,
+      "sha256": "c2ca322fde11c7044a114327ea100c50d06a72d6dc40bcce995e6c43f5aa1c12",
+      "version_tag": "20260602T153300Z"
+    }
+  ]
+}

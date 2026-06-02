@@ -1,0 +1,59 @@
+# -----------------------------------------------------------------------------
+# THIS WORKFLOW BELONGS TO THE `eurolab-models` REPOSITORY.
+#
+# It is committed in the EUROLAB application repo only as the source of truth /
+# template. To deploy it, copy BOTH of these into the eurolab-models repo:
+#
+#     scripts/reindex.py   ->  <eurolab-models>/reindex.py
+#     this file            ->  <eurolab-models>/.github/workflows/reindex.yml
+#
+# In the application repo this workflow never runs: the `paths` filter below
+# only matches changes under `models/**`, which do not exist here.
+#
+# What it does: on every push that adds/changes a model bundle under
+# `models/**`, it regenerates `index.json` from the folder tree (reindex.py)
+# and commits it back. `index.json` is therefore a pure projection of the
+# folders and is never hand-maintained.
+# -----------------------------------------------------------------------------
+name: reindex
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'models/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reindex-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  reindex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Regenerate index.json
+        run: python reindex.py .
+
+      - name: Commit index.json if it changed
+        run: |
+          if [ -n "$(git status --porcelain index.json)" ]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add index.json
+            git commit -m "chore: regenerate index.json [skip ci]"
+            git push
+          else
+            echo "index.json unchanged; nothing to commit."
+          fi
